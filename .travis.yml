@@ -16,8 +16,8 @@ deploy:
   region: "ap-south-1"
   app: "hello-world-react"
   env: "Helloworldreact-env"
-  bucket_name: "elasticbeanstalk-ap-south-1-054384855372"
-  bucket_path: "hello-world-react"
+  bucket_name: "helloworld-react-app"
+  bucket_path: "docker"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
