@@ -11,7 +11,7 @@ services:
 before_install: 
     - docker build -t wilpat/sample-app -f Dockerfile.dev .
 script:     
-    - docker run -e CI=true wilpat/sample-app npm run test -- --coverage && codecov
+    - npm run test -- --coverage && codecov
 
 deploy:
   provider: elasticbeanstalk
