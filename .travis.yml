@@ -9,6 +9,7 @@ services:
     - docker
 
 before_install: 
+    - npm install -g codecov
     - docker build -t wilpat/sample-app -f Dockerfile.dev .
 script:     
     - npm run test -- --coverage && codecov
